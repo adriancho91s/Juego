@@ -46,23 +46,34 @@ label:nth-of-type(6) {
   haga que los que están detras de él se vean desenfocados*/
   animation: changeOrder 6s infinite linear;
   position: fixed;
-  background: linear-gradient(-20deg, #eab3a0b9 20%, #a76f6fbd 60%);
-  box-shadow: 2px 2px 4px 600px rgba(0, 0, 0, 0.418);
-  cursor: pointer;
-  display: block;
-  user-select: none;
+  cursor: default;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-content: center;
+  align-items: center;
+  user-select: none;
   text-align: center;
-  top: 50%;
-  right: 42.5%;
-  height: 10%;
-  width: 15%;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  backdrop-filter: blur(10px);
   border-radius: 20px;
   z-index: 1;
   color: white;
 }
 
 
+.Iniciar {
+  display: flex;
+  background: linear-gradient(-20deg, #eab3a0b9 20%, #a76f6fbd 60%);
+  height: 5%;
+  padding: 3%;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
 
 .MensajeGanaste{
   display: none;
