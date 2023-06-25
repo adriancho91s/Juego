@@ -10,6 +10,24 @@
   }
 
 /* Animation show and hide */
+label:nth-of-type(1) {
+  animation-delay: 0s;
+}
+label:nth-of-type(2) {
+  animation-delay: -0.5s;
+}
+label:nth-of-type(3) {
+  animation-delay: -1s;
+}
+label:nth-of-type(4) {
+  animation-delay: -1.5s;
+}
+label:nth-of-type(5) {
+  animation-delay: -2s;
+}
+label:nth-of-type(6) {
+  animation-delay: -1.2s;
+} 
 
 @keyframes show {
     50% {
@@ -22,41 +40,34 @@
     }
   }
 
+
 .GenerarAzar {
-  /*I want this botton be centering
-  and be in all the screen*/
+  /*Quiero hacer que este elemento 
+  haga que los que están detras de él se vean desenfocados*/
+  animation: changeOrder 6s infinite linear;
   position: fixed;
-  background: #332626;
+  background: linear-gradient(-20deg, #eab3a0b9 20%, #a76f6fbd 60%);
+  box-shadow: 2px 2px 4px 600px rgba(0, 0, 0, 0.418);
   cursor: pointer;
   display: block;
   user-select: none;
+  align-content: center;
+  text-align: center;
+  top: 50%;
+  right: 42.5%;
+  height: 10%;
+  width: 15%;
+  border-radius: 20px;
   z-index: 1;
-  /* center it self*/
-  
+  color: white;
 }
-  
+
+
+
 .MensajeGanaste{
   display: none;
 }
-  label:nth-of-type(1) {
-    animation-delay: 0s;
-  }
-  label:nth-of-type(2) {
-    animation-delay: -0.5s;
-  }
-  label:nth-of-type(3) {
-    animation-delay: -1s;
-  }
-  label:nth-of-type(4) {
-    animation-delay: -1.5s;
-  }
-  label:nth-of-type(5) {
-    animation-delay: -2s;
-  }
-  label:nth-of-type(6) {
-    animation-delay: -1.2s;
-  } 
-  
+
   /* --------------------- Dado 1 --------------------- */
   #D1:checked ~ main label:nth-of-type(12) {order: 4;}
   #D1:checked ~ main label:nth-of-type(2) {order: 14;}
@@ -159,7 +170,7 @@
   #D6:checked ~ main label:nth-of-type(4) {order: 8;}
   #D6:checked ~ main label:nth-of-type(9) {order: 14;}
 
-/* tapar label-dice cuando clickeado */
+/* tapar GenerarAzar cuando clickeado */
 #D1:checked ~ .GenerarAzar,
 #D2:checked ~ .GenerarAzar,
 #D3:checked ~ .GenerarAzar,
