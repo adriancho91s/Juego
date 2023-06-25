@@ -66,6 +66,8 @@ label:nth-of-type(6) {
 
 .Iniciar {
   display: flex;
+  cursor: default;
+  user-select: none;
   background: linear-gradient(-20deg, #eab3a0b9 20%, #a76f6fbd 60%);
   height: 5%;
   padding: 3%;
@@ -73,7 +75,11 @@ label:nth-of-type(6) {
   justify-items: center;
   justify-content: center;
   border-radius: 20px;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
 }
+
 
 .MensajeGanaste{
   display: none;
