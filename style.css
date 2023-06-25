@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
 }
-  
+
 main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -15,13 +15,13 @@ main {
   justify-content: center;
   justify-items: center;
   height: 100%;
-  padding: 5%;
+  padding: 0 2%;
   gap: 2%;
   margin-top: 6%;
 }
 
 label {
-  aspect-ratio: 1/ 1;
+  aspect-ratio: 1/ 1.5;
   width: 100%;
   height: 100%;
   position: relative;
@@ -78,41 +78,31 @@ label {
   
   /* Style the front side (fallback if image is missing) */
 .CaraFrontal {
-  border-radius: 20px;
-  background: rgb(0, 114, 255);
-  background: linear-gradient(
-  90deg,
-rgb(14, 21, 31) 1%,
-rgb(41, 37, 32) 100% );
-  color: black;
+  border-radius: 10%;
+  background: linear-gradient(rgb(14, 21, 31), rgb(41, 37, 32) 100% );
+  
 }
   
-  /* Style the back side */
-  .CaraPosterior {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    justify-items: center;
-    border-radius: 20px;
-    color: white;
-    transform: rotateY(180deg);
-  }
+/* Style the back side */
+.CaraPosterior {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  border-radius: 10%;
+  color: white;
+  transform: rotateY(180deg);
+}
 @keyframes flotar {
   0% {
-    transform: scale(.8);
-    transform: translateY(-6px);
-    transform: translateX(-5px);
+    transform: translate3d(0, 1px, 0);
   }
   50% {
-    transform: scale(.8);
-    transform: translateX(10px);
-    transform: translateY(5px);
+    transform: translate3d(0, -30px, 0);
   }
   100% {
-    transform: scale(.8);
-    transform: translateX(10px);
-    transform: translateY(-5px);
+    transform: translate3d(0, 0, 0);
   }
 }
 
@@ -120,12 +110,15 @@ img {
   display: flex;
   padding: 0;
   margin: 0;
-  border-radius: 50%;
-  width: 80%; 
-  height: 80%;
-  scale: (.9);
-  transform: scale(.8);
-  animation: flotar 2s infinite ease-in-out;
+  border-radius: 10%;
+  object-fit: cover;
+  background-size: contain;
+  margin: 20%;
+  width: 100%; 
+  height: 100%;
+  scale: (.6);
+  transform: scale(.6);
+  animation: flotar 5s infinite ease-in-out;
   animation-iteration-count: infinite;
   box-shadow: -3px 0 10px rgba(0, 0, 0, 0.3), -4px 0 10px rgba(0, 0, 0, 0.2),
   -5px 0 10px rgba(0, 0, 0, 0.1);
@@ -134,8 +127,7 @@ img {
 
 header {
   display: flex;
-  gap: 50%;
-  justify-content: center;
+  justify-content: space-between;
   align-content: center;
   padding: 1%;
     background: linear-gradient(
@@ -157,6 +149,8 @@ a {
 
 .boton {
   display: inline-block;
+  justify-self: left;
+  align-self: left;
   padding: 10px 20px;
   font-size: 16px;
   font-weight: bold;
