@@ -29,111 +29,8 @@ label:nth-of-type(6) {
   animation-delay: -1.2s;
 } 
 
-@keyframes show {
-  50% {
-    opacity: 0;
-    transform: scale(0);
-    transform: translateY(-20px);
-  }
-  100% {
-    opacity: 4;
-    transform: scale(1);
-    transform: translateY(0);
-  }
-}
-
-@keyframes hide {
-  0% {
-    opacity: 4;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-}
-
-  
-.GenerarAzar {
-  /*Quiero hacer que este elemento 
-  haga que los que están detras de él se vean desenfocados*/
-  animation: changeOrder 6s infinite linear;
-  position: fixed;
-  cursor: default;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  user-select: none;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  backdrop-filter: blur(10px);
-  border-radius: 20px;
-  z-index: 1;
-  color: white;
-}
-
-
-.Iniciar {
-  display: flex;
-  cursor: default;
-  user-select: none;
-  background: linear-gradient(-20deg, #eab3a0b9 20%, #a76f6fbd 60%);
-  height: 5%;
-  padding: 3%;
-  align-items: center;
-  justify-items: center;
-  justify-content: center;
-  border-radius: 20px;
-  font-family: 'Montserrat', Helvetica, sans-serif;
-  font-weight: 700;
-  font-size: 2rem;
-}
-
-.VoltearCarta {
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  justify-content: center;
-  height: 5%;
-  padding: 2% 1%;
-  border-radius: 20px;
-  font-family: 'Montserrat', Helvetica, sans-serif;
-  font-weight: 700;
-  font-size: 1.2rem;
-  z-index: 10;
-  line-height: 1.6;
-  opacity: 0;
-  position: fixed;
-  top: 2%;
-  left: 0;
-  color: white;
-  background: linear-gradient(-20deg, #eab3a0e7 20%, #a76f6fdc 60%);
-}
-
-
-.MensajeGanaste{
+.MensajeGanaste {
   display: none;
-}
-
-@media screen and (max-width: 430px) {
-  .VoltearCarta {
-    font-size: 1rem;
-    text-align: justify;
-    height: 12%;
-  }
-  main {
-    margin-top: 2%;
-    padding: 0 0.5%;
-    gap: 2%;
-  }
 }
 
   /* --------------------- Dado 1 --------------------- */
@@ -1139,4 +1036,125 @@ label:nth-of-type(6) {
     display: none;
   }
 
+  @keyframes show {
+    50% {
+      opacity: 0;
+      transform: scale(0);
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 4;
+      transform: scale(1);
+      transform: translateY(0);
+    }
+  }
   
+  
+    
+  .GenerarAzar {
+    /*Quiero hacer que este elemento 
+    haga que los que están detras de él se vean desenfocados*/
+    animation: changeOrder 6s infinite linear;
+    position: fixed;
+    cursor: default;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    user-select: none;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    color: white;
+  }
+  
+  
+  .Iniciar {
+    display: flex;
+    cursor: default;
+    user-select: none;
+    background: linear-gradient(-20deg, #eab3a0b9 20%, #a76f6fbd 60%);
+    height: 5%;
+    padding: 3%;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  
+  .VoltearCarta {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    height: 5%;
+    padding: 2% 1%;
+    border-radius: 20px;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    z-index: 10;
+    line-height: 1.6;
+    opacity: 0;
+    position: fixed;
+    top: 2%;
+    left: 0;
+    color: white;
+    background: linear-gradient(-20deg, #eab3a0e7 20%, #a76f6fdc 60%);
+  }
+  
+  
+ 
+  
+  @media screen and (max-width: 430px) {
+    .VoltearCarta {
+      font-size: 1rem;
+      text-align: justify;
+      height: 12%;
+    }
+    main {
+      margin-top: 2%;
+      padding: 0 0.5%;
+      gap: 2%;
+    }
+  }
+  
+.MensajeGanaste {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  padding: 2% 0;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  color: white;
+  
+}
+
+.BotonGanaste {
+  cursor: default;
+  user-select: none;
+  background: linear-gradient(-20deg, #eab3a0b9 20%, #a76f6fbd 60%);
+  height: 5%;
+  padding: 3%;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+}
