@@ -985,7 +985,7 @@ label:nth-of-type(6) {
 #MotleyCrue1:checked ~ #MotleyCrue2:not(:checked) ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ .VoltearCarta,
 #MotleyCrue1:not(:checked) ~ #MotleyCrue2:checked ~ #Nirvana1:not(:checked) ~ #Nirvana2:checked ~ .VoltearCarta
 {
-  animation: show 0.5s ease-in-out forwards;
+  animation: show 8s ease-in-out forwards;
   pointer-events: none;
 }
   
