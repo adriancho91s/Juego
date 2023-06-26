@@ -129,6 +129,11 @@ label:nth-of-type(6) {
     text-align: justify;
     height: 12%;
   }
+  main {
+    margin-top: 2%;
+    padding: 0 0.5%;
+    gap: 2%;
+  }
 }
 
   /* --------------------- Dado 1 --------------------- */
