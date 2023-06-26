@@ -156,7 +156,7 @@ a {
   display: inline-block;
   align-self: center;
   text-align: center;
-  height: 80%;
+  height: 60%;
   text-decoration: none;
   background: linear-gradient(-20deg, #a76f6fbd 20%, #eab3a0b9 60%);
   border: none;
@@ -167,7 +167,7 @@ a {
   font-family: 'Montserrat', Helvetica, sans-serif;
   color: white;
   display: block;
-  padding: 4%;
+  padding: 2%;
   font-size: 16px;
   font-weight: 700;
   font-family: 'Montserrat', Helvetica, sans-serif;
